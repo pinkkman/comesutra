@@ -65,5 +65,9 @@
   }
   body {
     @apply bg-background text-foreground;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
   }
 }

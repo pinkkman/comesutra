@@ -128,13 +128,17 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="mx-auto mt-10 max-w-3xl">
-                    <Faq />
+                  <Card>
+                    <CardContent className="p-6">
+                      <Faq />
+                    </CardContent>
+                  </Card>
                 </div>
             </div>
           </section>
 
         </main>
-        <footer className="flex w-full shrink-0 flex-col items-center justify-center gap-2 border-t px-4 py-6 sm:flex-row md:px-6">
+        <footer className="bg-secondary flex w-full shrink-0 flex-col items-center justify-center gap-2 border-t px-4 py-6 sm:flex-row md:px-6">
           <p className="text-xs text-muted-foreground">&copy; 2024 Computer Engineering Department. All rights reserved.</p>
         </footer>
       </div>
