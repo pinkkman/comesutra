@@ -86,7 +86,7 @@ export default function Home() {
                   variant="outline"
                   className="border-primary/40 bg-card/30 font-bold backdrop-blur hover:bg-card/50"
                 >
-                  RSVP Now
+                  Register Now
                 </Button>
               </a>
             </div>
@@ -189,7 +189,7 @@ export default function Home() {
                         size="lg"
                         style={{ backgroundColor: "hsl(var(--primary))" }}
                       >
-                        RSVP Now
+                        Register Now
                       </Button>
                     </a>
                   </div>
