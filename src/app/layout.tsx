@@ -1,12 +1,18 @@
 import type { Metadata } from 'next';
-import { Poppins } from 'next/font/google';
+import { Poppins, Playfair_Display } from 'next/font/google';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['400', '600', '700', '900'],
+  weight: ['400', '600', '700'],
   variable: '--font-poppins',
+});
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['700', '900'],
+  variable: '--font-playfair',
 });
 
 export const metadata: Metadata = {
@@ -21,15 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body className={`${poppins.variable} font-body antialiased`}>
+      <body className={`${poppins.variable} ${playfair.variable} font-body antialiased`}>
         {children}
         <Toaster />
       </body>
