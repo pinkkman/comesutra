@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { CalendarDays, Clock, MapPin, Gift, Music, Users, ChevronDown } from 'lucide-react';
+import { CalendarDays, Clock, MapPin, Gift, Music, Users } from 'lucide-react';
 import Countdown from '@/components/countdown';
 import Faq from '@/components/faq';
 import { Button } from '@/components/ui/button';
@@ -9,17 +9,17 @@ export default function Home() {
     {
       icon: <CalendarDays className="h-8 w-8 text-primary" />,
       title: 'Date',
-      value: 'August 28, 2024',
+      value: 'March 01, 2026',
     },
     {
       icon: <Clock className="h-8 w-8 text-primary" />,
       title: 'Time',
-      value: '7:00 PM Onwards',
+      value: '  9:00 AM Onwards',
     },
     {
       icon: <MapPin className="h-8 w-8 text-primary" />,
       title: 'Venue',
-      value: 'University Auditorium',
+      value: 'Hotel Suncity',
     },
   ];
 
@@ -55,11 +55,6 @@ export default function Home() {
             </p>
           </div>
           <Countdown />
-          <div className="absolute bottom-10 animate-bounce">
-            <a href="#details">
-              <ChevronDown className="h-8 w-8 text-primary" />
-            </a>
-          </div>
         </section>
 
         <section id="details" className="w-full bg-card py-20 sm:py-32">
