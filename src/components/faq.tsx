@@ -20,11 +20,11 @@ const faqItems = [
     },
     {
         question: "Is there an entry fee?",
-        answer: "No, the event is completely free for all first-year Computer Engineering students.",
+        answer: "Yes, the entry fees is mentioned in the registration form.",
     },
     {
         question: "What kind of activities are planned?",
-        answer: "We have a fun-packed evening with a live DJ, dance floor, ice-breaker games, and some surprise giveaways!",
+        answer: "We have a fun-packed evening with a Dance performances, musical performances, games, and a jamming session for everyone to enjoy!",
     }
 ]
 
