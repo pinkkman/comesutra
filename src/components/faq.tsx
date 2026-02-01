@@ -24,7 +24,7 @@ const faqItems = [
     },
     {
         question: "What kind of activities are planned?",
-        answer: "We have a fun-packed evening with a Dance performances, musical performances, games, and a jamming session for everyone to enjoy!",
+        answer: "We have a fun-packed evening with Dance performances, musical performances, games, and a jamming session for everyone to enjoy!",
     }
 ]
 
