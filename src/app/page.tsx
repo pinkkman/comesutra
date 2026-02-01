@@ -5,7 +5,6 @@ import { CalendarDays, Clock, MapPin, Gift, Music, Users } from 'lucide-react';
 import Countdown from '@/components/countdown';
 import RsvpForm from '@/components/rsvp-form';
 import Faq from '@/components/faq';
-import Confetti from '@/components/confetti';
 
 export default function Home() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-party');
@@ -48,10 +47,9 @@ export default function Home() {
 
   return (
     <>
-      <Confetti />
       <div className="flex flex-col min-h-[100dvh]">
         <main className="flex-1">
-          <section className="relative flex h-[90vh] min-h-[600px] w-full items-center justify-center text-center text-white">
+          <section className="relative flex h-[80vh] min-h-[500px] w-full items-center justify-center text-center text-white">
             {heroImage && (
               <Image
                 src={heroImage.imageUrl}
@@ -65,10 +63,10 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30" />
             <div className="relative z-10 flex flex-col items-center space-y-8 px-4">
               <div className="space-y-4">
-                <h1 className="font-headline text-5xl font-black tracking-tight drop-shadow-lg sm:text-7xl md:text-8xl">
+                <h1 className="font-headline text-5xl font-black tracking-tight drop-shadow-lg sm:text-6xl lg:text-7xl">
                   Fresher's Fiesta
                 </h1>
-                <p className="max-w-2xl text-lg text-primary-foreground/90 md:text-xl">
+                <p className="max-w-2xl text-base text-primary-foreground/90 sm:text-lg md:text-xl">
                   Welcome, Computer Engineering Students! Get ready for an unforgettable night of celebration.
                 </p>
               </div>

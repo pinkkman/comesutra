@@ -77,7 +77,7 @@ export default function RsvpForm() {
             <FormItem>
               <FormLabel className="sr-only">Name</FormLabel>
               <FormControl>
-                <Input placeholder="Your Name" {...field} className="text-base" />
+                <Input placeholder="Your Name" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -90,7 +90,7 @@ export default function RsvpForm() {
             <FormItem>
               <FormLabel className="sr-only">Email</FormLabel>
               <FormControl>
-                <Input type="email" placeholder="Your Email Address" {...field} className="text-base" />
+                <Input type="email" placeholder="Your Email Address" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
