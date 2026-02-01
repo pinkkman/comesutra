@@ -48,7 +48,7 @@ export default function Home() {
           <section className="flex h-[60vh] min-h-[500px] w-full flex-col items-center justify-center space-y-8 px-4 text-center text-foreground">
             <div className="space-y-4">
               <h1 className="font-headline text-4xl font-black tracking-tight drop-shadow-lg sm:text-6xl lg:text-7xl">
-                Fresher's Fiesta
+                COME सूत्र
               </h1>
               <p className="max-w-2xl text-lg text-foreground/90 md:text-xl">
                 Welcome, Computer Engineering Students! Get ready for an

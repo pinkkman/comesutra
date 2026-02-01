@@ -10,7 +10,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Fresher's Fiesta",
+  title: "COME सूत्र",
   description: 'Join us for a night of fun and celebration!',
 };
 
