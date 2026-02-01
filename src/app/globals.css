@@ -88,3 +88,14 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Mobile performance: disable heavy blurs / large shadows on smaller screens */
+@media (max-width: 767px) {
+  .backdrop-blur, .backdrop-blur-sm, .blur-3xl {
+    backdrop-filter: none !important;
+  }
+  .shadow-xl, .shadow-lg {
+    box-shadow: none !important;
+  }
+}
+

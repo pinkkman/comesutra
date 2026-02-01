@@ -45,11 +45,11 @@ export default function Home() {
     <div className="flex min-h-dvh w-full flex-col">
       <main className="flex-1">
         {/* HERO */}
-        <section className="relative flex h-dvh min-h-[680px] w-full items-center justify-center px-4 text-center">
+        <section className="relative flex h-dvh min-h-[60vh] md:min-h-[680px] w-full items-center justify-center px-4 text-center">
           {/* festival-ish overlay (no new CSS required) */}
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-black/5 to-black/10" />
-          <div className="pointer-events-none absolute -top-24 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-[hsl(var(--accent))]/25 blur-3xl" />
-          <div className="pointer-events-none absolute -bottom-24 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-[hsl(var(--primary))]/20 blur-3xl" />
+          <div className="pointer-events-none absolute -top-24 left-1/2 hidden sm:block h-[320px] sm:h-[520px] w-[320px] sm:w-[520px] -translate-x-1/2 rounded-full bg-[hsl(var(--accent))]/25 sm:blur-3xl" />
+          <div className="pointer-events-none absolute -bottom-24 left-1/2 hidden sm:block h-[320px] sm:h-[520px] w-[320px] sm:w-[520px] -translate-x-1/2 rounded-full bg-[hsl(var(--primary))]/20 sm:blur-3xl" />
 
           <div className="relative mx-auto flex max-w-4xl flex-col items-center gap-8">
             <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-card/40 px-4 py-2 text-xs font-semibold tracking-widest text-foreground backdrop-blur">
@@ -58,7 +58,7 @@ export default function Home() {
             </div>
 
             <div className="space-y-4">
-              <h1 className="font-headline text-5xl font-black tracking-tight text-primary drop-shadow-sm sm:text-6xl md:text-7xl lg:text-8xl">
+              <h1 className="font-headline text-4xl font-black tracking-tight text-primary drop-shadow-sm sm:text-6xl md:text-7xl lg:text-8xl">
                 COME <span className="text-foreground">सूत्र</span>
               </h1>
               <p className="mx-auto max-w-2xl text-base text-muted-foreground sm:text-lg">

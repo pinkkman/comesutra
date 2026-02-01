@@ -18,6 +18,13 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "COME सूत्र",
   description: "Join us for a night of fun and celebration!",
+  // improve mobile scaling on Android/iOS
+  viewport: 'width=device-width,initial-scale=1',
+  // status bar colour on Android / PWA hint
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#F7F3F0' },
+    { media: '(prefers-color-scheme: dark)', color: '#0b0b0b' },
+  ],
 };
 
 export default function RootLayout({

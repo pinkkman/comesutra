@@ -54,12 +54,14 @@ function Calendar({
         ...classNames,
       }}
       components={{
-        IconLeft: ({ className, ...props }) => (
-          <ChevronLeft className={cn("h-4 w-4", className)} {...props} />
-        ),
-        IconRight: ({ className, ...props }) => (
-          <ChevronRight className={cn("h-4 w-4", className)} {...props} />
-        ),
+        // react-day-picker v9 expects a single `Chevron` component (orientation prop provided).
+        // Type the param explicitly to avoid implicit `any` and don't forward unknown props to the SVG.
+        Chevron: ({ className, orientation }: import('react-day-picker').ChevronProps) =>
+          orientation === 'left' || orientation === 'up' ? (
+            <ChevronLeft className={cn('h-4 w-4', className)} aria-hidden />
+          ) : (
+            <ChevronRight className={cn('h-4 w-4', className)} aria-hidden />
+          ),
       }}
       {...props}
     />
