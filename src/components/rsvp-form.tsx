@@ -98,7 +98,7 @@ export default function RsvpForm() {
         />
         <Button
           type="submit"
-          className="w-full text-lg font-bold"
+          className="w-full font-bold"
           size="lg"
           variant="default"
           style={{backgroundColor: 'hsl(var(--accent))', color: 'hsl(var(--accent-foreground))'}}
