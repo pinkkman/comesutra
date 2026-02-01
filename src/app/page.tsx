@@ -1,8 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { CalendarDays, Clock, MapPin, Gift, Music, Users } from 'lucide-react';
 import Countdown from '@/components/countdown';
-import RsvpForm from '@/components/rsvp-form';
 import Faq from '@/components/faq';
+import { Button } from '@/components/ui/button';
 
 export default function Home() {
   const eventDetails = [
@@ -112,7 +112,15 @@ export default function Home() {
                 </p>
               </div>
               <div className="mx-auto w-full max-w-sm">
-                <RsvpForm />
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfEKdPhFvGT-qayxMllW7-N9WYdnNTdfgf4AycpmImtrYU5-A/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">
+                  <Button
+                    className="w-full font-bold"
+                    size="lg"
+                    style={{backgroundColor: 'hsl(var(--accent))', color: 'hsl(var(--accent-foreground))'}}
+                  >
+                    RSVP Now
+                  </Button>
+                </a>
               </div>
             </div>
           </section>
