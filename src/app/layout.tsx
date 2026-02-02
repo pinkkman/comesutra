@@ -36,7 +36,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.variable} ${playfair.variable} font-body antialiased`}>
         {/* Site-wide background wrapper (style this via globals.css) */}
-        <div className="min-h-dvh w-full bg-[hsl(var(--background))] text-[hsl(var(--foreground))]">
+        <div className="site-root min-h-dvh w-full bg-[hsl(var(--background))] text-[hsl(var(--foreground))]">
           {children}
         </div>
         <Toaster />
