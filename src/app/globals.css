@@ -84,8 +84,59 @@
   * {
     @apply border-border;
   }
+
+  /* App background: image (preferred) with color fallback for very small / JS-disabled clients */
+  html, body, #__next {
+    height: 100%;
+  }
+
+  :root { --bg-image-overlay: rgba(4,4,4,0.45); --bg-image-overlay-dark: rgba(0,0,0,0.6); }
+
+  /* Use image-set so supporting browsers prefer WebP; provide responsive fallbacks via media queries */
   body {
-    @apply bg-background text-foreground;
+    background-color: hsl(var(--background));
+    background-image: image-set(
+      url('/images/come-sutre-1280.webp') type('image/webp') 1x,
+      url('/images/come-sutre-780.webp') type('image/webp') 780w,
+      url('/images/come-sutre-480.webp') type('image/webp') 480w,
+      url('/images/come-sutre.jpg') type('image/jpeg') 1x
+    );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: hsl(var(--foreground));
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Top-level wrapper used in layout.tsx — overlay + stacking context for accessible text contrast */
+  .site-root {
+    position: relative;
+    min-height: 100dvh;
+    isolation: isolate;
+    background: transparent; /* keep CSS variables/card backgrounds working */
+  }
+
+  .site-root::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: var(--bg-image-overlay);
+    pointer-events: none;
+    z-index: 0;
+    transition: background-color 200ms ease;
+  }
+
+  /* stronger overlay in dark mode */
+  .dark .site-root::before {
+    background: var(--bg-image-overlay-dark);
+  }
+
+  /* ensure page content sits above the overlay */
+  .site-root > * {
+    position: relative;
+    z-index: 1;
   }
 }
 
