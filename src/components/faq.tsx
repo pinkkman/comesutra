@@ -8,7 +8,7 @@ import {
 const faqItems = [
     {
         question: "What is the dress code for the party?",
-        answer: "The dress code is smart casual. Feel free to dress your best and be comfortable!",
+        answer: "•Senior Males-formals \n•Senior Girls saree/lehengaa \n•Junior boys and girls traditionals (except saree/lehenga)",
     },
     {
         question: "Can I bring a guest?",
@@ -34,7 +34,7 @@ export default function Faq() {
         {faqItems.map((item, index) => (
             <AccordionItem key={index} value={`item-${index+1}`}>
                 <AccordionTrigger className="text-left font-semibold text-lg hover:no-underline">{item.question}</AccordionTrigger>
-                <AccordionContent className="text-muted-foreground text-base">
+                <AccordionContent className="text-muted-foreground text-base whitespace-pre-line leading-relaxed">
                 {item.answer}
                 </AccordionContent>
             </AccordionItem>

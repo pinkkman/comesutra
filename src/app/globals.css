@@ -4,79 +4,70 @@
 
 @layer base {
   :root {
-    /* PAGE BACKGROUND = GOLD (slightly calmer + less neon) */
-    --background: 45 85% 52%;
-    --foreground: 0 20% 12%;
+    /* Poster style red background */
+    --background: 0 65% 32%;
+    --foreground: 45 90% 92%;
 
-    /* SURFACES = WARM IVORY */
-    --card: 45 55% 96%;
-    --card-foreground: 0 20% 12%;
+    /* Card surfaces (soft festive cream) */
+    --card: 40 70% 95%;
+    --card-foreground: 0 60% 20%;
 
-    --popover: 45 55% 96%;
-    --popover-foreground: 0 20% 12%;
+    --popover: 40 70% 95%;
+    --popover-foreground: 0 60% 20%;
 
-    /* UI (deep maroon like your reference) */
-    --primary: 0 55% 30%;
-    --primary-foreground: 45 40% 97%;
+    /* Deep festive maroon */
+    --primary: 0 70% 28%;
+    --primary-foreground: 45 95% 92%;
 
-    --secondary: 45 35% 92%;
-    --secondary-foreground: 0 20% 12%;
+    /* Light decorative background */
+    --secondary: 40 50% 90%;
+    --secondary-foreground: 0 60% 20%;
 
-    --muted: 45 28% 90%;
-    --muted-foreground: 0 12% 38%;
+    --muted: 40 30% 85%;
+    --muted-foreground: 0 30% 35%;
 
-    /* Accent = poster gold */
-    --accent: 45 90% 50%;
-    --accent-foreground: 0 20% 12%;
+    /* Poster GOLD */
+    --accent: 45 95% 55%;
+    --accent-foreground: 0 60% 20%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 80% 55%;
     --destructive-foreground: 0 0% 98%;
 
-    /* BORDERS/INPUTS */
-    --border: 45 22% 80%;
-    --input: 45 25% 88%;
-    --ring: 0 55% 30%;
+    /* Borders / Inputs */
+    --border: 0 35% 60%;
+    --input: 40 40% 85%;
+    --ring: 45 95% 55%;
 
     --radius: 0.8rem;
-
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
   }
 
+
   /* DARK MODE: deep maroon background + dark surfaces */
-  .dark {
-    --background: 350 55% 14%;
-    --foreground: 45 30% 96%;
+    .dark {
+    --background: 0 70% 18%;
+    --foreground: 45 85% 92%;
 
-    --card: 0 0% 12%;
-    --card-foreground: 45 30% 96%;
+    --card: 0 20% 12%;
+    --card-foreground: 45 85% 92%;
 
-    --popover: 0 0% 12%;
-    --popover-foreground: 45 30% 96%;
+    --popover: 0 20% 12%;
+    --popover-foreground: 45 85% 92%;
 
-    --primary: 45 90% 55%;
-    --primary-foreground: 0 0% 10%;
+    --primary: 45 95% 55%;
+    --primary-foreground: 0 70% 20%;
 
-    --secondary: 0 0% 18%;
-    --secondary-foreground: 45 30% 96%;
+    --secondary: 0 20% 20%;
+    --secondary-foreground: 45 85% 92%;
 
-    --muted: 0 0% 18%;
-    --muted-foreground: 45 15% 70%;
+    --muted: 0 20% 20%;
+    --muted-foreground: 45 40% 70%;
 
-    --accent: 45 90% 55%;
-    --accent-foreground: 0 0% 10%;
+    --accent: 45 95% 55%;
+    --accent-foreground: 0 70% 20%;
 
-    --destructive: 0 63% 30%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 0 0% 22%;
-    --input: 0 0% 18%;
-    --ring: 45 90% 55%;
-
-    --radius: 0.8rem;
+    --border: 0 20% 25%;
+    --input: 0 20% 20%;
+    --ring: 45 95% 55%;
   }
 }
 
@@ -93,22 +84,16 @@
   :root { --bg-image-overlay: rgba(4,4,4,0.45); --bg-image-overlay-dark: rgba(0,0,0,0.6); }
 
   /* Use image-set so supporting browsers prefer WebP; provide responsive fallbacks via media queries */
-  body {
-    background-color: hsl(var(--background));
-    background-image: image-set(
-      url('/images/come-sutre-1280.webp') type('image/webp') 1x,
-      url('/images/come-sutre-780.webp') type('image/webp') 780w,
-      url('/images/come-sutre-480.webp') type('image/webp') 480w,
-      url('/images/come-sutre.jpg') type('image/jpeg') 1x
-    );
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    color: hsl(var(--foreground));
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+body {
+  background:
+    radial-gradient(circle at top, rgba(255, 215, 0, 0.15), transparent 60%),
+    linear-gradient(135deg, #7a0f1a, #b71c1c);
+
+  background-size: cover;
+  background-attachment: fixed;
+
+  color: hsl(var(--foreground));
+}
 
   /* Top-level wrapper used in layout.tsx — overlay + stacking context for accessible text contrast */
   .site-root {
