@@ -10,13 +10,10 @@ const faqItems = [
         question: "What is the dress code for the party?",
         answer: "•Senior Males-formals \n•Senior Girls saree/lehengaa \n•Junior boys and girls traditionals (except saree/lehenga)",
     },
-    {
-        question: "Can I bring a guest?",
-        answer: "This event is exclusively for the Computer Engineering freshers to help them get to know their batchmates. So, guests are not allowed.",
-    },
+
     {
         question: "Will there be food and drinks?",
-        answer: "Yes, we will have a variety of snacks, dinner, and non-alcoholic beverages available for all attendees.",
+        answer: " Yes , we will have an exclusive lunch menu and non alcoholic beverages ",
     },
     {
         question: "Is there an entry fee?",
@@ -24,7 +21,7 @@ const faqItems = [
     },
     {
         question: "What kind of activities are planned?",
-        answer: "We have a fun-packed evening with Dance performances, musical performances, games, and a jamming session for everyone to enjoy!",
+        answer: "We have a fun-packed day with Dance performances, musical performances, games, and a jamming session for everyone to enjoy!",
     }
 ]
 

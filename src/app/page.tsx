@@ -18,7 +18,7 @@ export default function Home() {
   {
     icon: <MapPin className="h-8 w-8 text-primary" />,
     title: "Venue",
-    value: "Hotel Suncity",
+    value: "Hotel Suncity , Patrapada",
   },
 ];
 
@@ -155,49 +155,6 @@ const features = [
                     <p className="text-lg font-semibold text-[#FFE082]">
                       {detail.value}
                     </p>
-                  </CardContent>
-                </Card>
-              ))}
-
-            </div>
-          </div>
-        </section>
-
-        {/* HIGHLIGHTS */}
-        <section className="w-full py-16 sm:py-24">
-          <div className="container px-4 md:px-6">
-
-            <div className="mb-12 text-center">
-              <h2 className="font-headline text-3xl font-bold sm:text-5xl text-[#FFE6C9]">
-                Party Highlights
-              </h2>
-
-              <p className="mx-auto mt-4 max-w-3xl text-[#FFE082] sm:text-lg">
-                A vibe that’s festive, energetic, and actually well-designed.
-              </p>
-            </div>
-
-            <div className="grid gap-6 md:grid-cols-3">
-
-              {features.map((feature, index) => (
-                <Card
-                  key={index}
-                  className="group border border-[#FFD95A]/10 bg-card/55 text-center shadow-lg backdrop-blur transition hover:-translate-y-1"
-                >
-                  <CardContent className="p-8">
-
-                    <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl border border-[#FFD95A]/15 bg-background/40 shadow-sm">
-                      {feature.icon}
-                    </div>
-
-                    <h3 className="mt-5 font-headline text-xl font-bold text-[#FFE6C9]">
-                      {feature.title}
-                    </h3>
-
-                    <p className="mt-2 text-[#FFE082]">
-                      {feature.description}
-                    </p>
-
                   </CardContent>
                 </Card>
               ))}
