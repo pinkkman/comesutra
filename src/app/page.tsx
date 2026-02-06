@@ -95,7 +95,7 @@ const features = [
               <a href="#details">
                 <Button
                   size="lg"
-                  className="font-bold bg-[#8B0000] text-[#FFE6C9] hover:bg-[#A11212] transition-all duration-300 shadow-lg"
+                  className="text-lg font-bold bg-[#8B0000] text-[#FFE6C9] hover:bg-[#A11212] transition-all duration-300 shadow-lg"
                 >
                   View Details
                 </Button>
@@ -108,7 +108,7 @@ const features = [
               >
                 <Button
                   size="lg"
-                  className="font-bold bg-[#C9A27E] text-[#5A0F14] hover:bg-[#D4B091] shadow-md transition-all duration-300"
+                  className="text-lg font-bold bg-[#C9A27E] text-[#5A0F14] hover:bg-[#D4B091] shadow-md transition-all duration-300"
                 >
                   Register Now
                 </Button>
@@ -137,7 +137,7 @@ const features = [
               {eventDetails.map((detail) => (
                 <Card
                   key={detail.title}
-                  className="group border border-[#FFD95A]/15 bg-card/60 text-center shadow-lg backdrop-blur transition hover:-translate-y-1 hover:shadow-xl"
+                  className=" group border border-[#FFD95A]/15 bg-card/60 text-center shadow-lg backdrop-blur transition hover:-translate-y-1 hover:shadow-xl"
                 >
                   <CardHeader className="items-center gap-4">
 
@@ -152,7 +152,7 @@ const features = [
                   </CardHeader>
 
                   <CardContent className="pb-8">
-                    <p className="text-lg font-semibold text-[#FFE082]">
+                    <p className="text-xl font-semibold text-[#FFE082]">
                       {detail.value}
                     </p>
                   </CardContent>
