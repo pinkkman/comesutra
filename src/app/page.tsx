@@ -8,12 +8,12 @@ export default function Home() {
   {
     icon: <CalendarDays className="h-8 w-8 text-primary" />,
     title: "Date",
-    value: "March 01, 2026",
+    value: "February 21, 2026",
   },
   {
     icon: <Clock className="h-8 w-8 text-primary" />,
     title: "Time",
-    value: "9:00 AM Onwards",
+    value: "10:00 AM Onwards",
   },
   {
     icon: <MapPin className="h-8 w-8 text-primary" />,
@@ -77,7 +77,7 @@ const features = [
                 </span>
 
               </h1>
-
+<br />
               <p className="mx-auto max-w-2xl text-base text-[#FFE082] sm:text-lg">
                 Welcome, Computer Engineering students — get ready for a premium celebration with music, energy, and memories.
               </p>
